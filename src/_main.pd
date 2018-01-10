@@ -1,0 +1,16 @@
+#N canvas 399 36 521 592 10;
+#X obj 115 427 expr~ $v1;
+#X obj 190 328 netreceive -u 12345;
+#X obj 224 364 print received:;
+#X obj 160 475 dac~ 3 4;
+#X obj 177 403 phasor~;
+#X obj 201 425 expr~ $v1 < $v2;
+#X obj 84 375 unpack 1 2 3 4;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 1 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 6 1 0 0;
+#X connect 6 2 4 0;
+#X connect 6 3 5 1;

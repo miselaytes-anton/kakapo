@@ -1,0 +1,33 @@
+#N canvas 522 151 640 424 10;
+#X obj 25 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 36 6 loadbang;
+#X obj 255 71 hsl 128 15 100 2000 0 0 empty empty Speed -2 -8 0 10
+-262144 -1 -1 4700 1;
+#X obj 26 71 metro;
+#X msg 171 43 500;
+#X obj 114 243 pack 0 0 0 0.9;
+#X obj 215 209 hsl 128 15 0.9 0.1 0 0 empty empty Trigger_length -2
+-8 0 10 -262144 -1 -1 0 1;
+#X msg 110 332 send \$1 \$2 \$3 \$4;
+#X obj 110 367 remote;
+#X obj 633 395;
+#X obj 161 134 cvtrigger;
+#X text 75 44 default speed;
+#X obj 163 283 print _ v t tl;
+#X obj 110 133 steps;
+#X connect 0 0 5 0;
+#X connect 0 0 13 0;
+#X connect 1 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 1;
+#X connect 2 0 10 1;
+#X connect 3 0 0 0;
+#X connect 4 0 3 1;
+#X connect 4 0 10 0;
+#X connect 5 0 7 0;
+#X connect 5 0 12 0;
+#X connect 6 0 5 3;
+#X connect 7 0 8 0;
+#X connect 10 0 5 2;
+#X connect 13 0 5 1;

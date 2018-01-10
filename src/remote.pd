@@ -1,0 +1,14 @@
+#N canvas 353 275 450 300 10;
+#X msg 151 139 disconnect;
+#X floatatom 128 204 0 0 0 0 - - -;
+#X obj 151 180 netsend -u;
+#X obj 102 80 loadbang;
+#X obj 217 206 print backward;
+#X msg 102 111 connect 192.168.7.2 12345;
+#X obj 266 151 inlet;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 1 4 0;
+#X connect 3 0 5 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
