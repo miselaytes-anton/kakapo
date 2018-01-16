@@ -6,6 +6,7 @@
 #X obj 83 30 inlet;
 #X obj 185 111 mod 8;
 #X obj 236 222 outlet;
+#X obj 60 245 counter;
 #X connect 0 0 6 0;
 #X connect 1 0 3 1;
 #X connect 1 0 5 0;
