@@ -1,0 +1,51 @@
+#N canvas 161 43 769 548 10;
+#X obj 354 268 expr if(abs($f1-$f3) < abs($f2-$f3) \, $f1 \, $f2);
+#X obj 415 351 f;
+#X obj 458 351 f;
+#X obj 505 351 + 1;
+#X obj 458 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 354 351 f;
+#X msg 497 79 1000;
+#X text 504 387 number of options - 1;
+#X obj 458 386 sel 3;
+#X msg 488 465 0;
+#X msg 532 498 1000;
+#X obj 372 291 t f f f f;
+#X obj 497 57 t f f;
+#X obj 497 101 t f f;
+#X obj 458 430 t b b;
+#X obj 482 498 t f f;
+#X text 515 465 reset;
+#X msg 72 133 0.0594545 \, 0.0667273 \, 0.0749091 \, 0.0793818 \, 0.0890909
+\, 0.1 \, 0.112255 \, 0.118909 \, 0.133491 \, 0.149818 \, 0.158727
+\, 0.178182 \, 0.2 \, 0.224509 \, 0.237855 \, 0.266982 \, 0.299673
+\, 0.317491 \, 0.356364 \, 0.4 \, 0.448982 \, 0.475673 \, 0.533927
+\, 0.599309 \, 0.634945 \, 0.712727 \, 0.8 \, 0.897964 \, 0.951382
+;
+#X obj 394 443 outlet;
+#X obj 497 27 inlet;
+#X connect 0 0 11 0;
+#X connect 1 0 18 0;
+#X connect 2 0 3 0;
+#X connect 2 0 8 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
+#X connect 5 0 0 1;
+#X connect 6 0 13 0;
+#X connect 8 0 14 0;
+#X connect 9 0 15 0;
+#X connect 10 0 0 1;
+#X connect 11 1 5 0;
+#X connect 11 2 4 0;
+#X connect 11 3 1 1;
+#X connect 12 0 6 0;
+#X connect 12 1 0 2;
+#X connect 13 0 17 0;
+#X connect 13 1 0 1;
+#X connect 14 0 1 0;
+#X connect 14 1 9 0;
+#X connect 15 0 2 1;
+#X connect 15 1 10 0;
+#X connect 17 0 0 0;
+#X connect 19 0 12 0;
