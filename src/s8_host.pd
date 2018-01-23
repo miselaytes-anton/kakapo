@@ -1,39 +1,36 @@
-#N canvas 100 43 640 493 10;
+#N canvas 687 119 640 516 10;
 #X obj 25 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 36 6 loadbang;
+#X obj 17 5 loadbang;
 #X obj 26 71 metro;
-#X msg 171 43 500;
-#X obj 114 243 pack 0 0 0 0.9;
-#X obj 199 204 hsl 128 15 0.9 0.1 0 0 empty empty Trigger_length -2
+#X msg 70 29 500;
+#X obj 31 284 pack 0 0 0 0.9;
+#X obj 122 250 hsl 128 15 0.9 0.1 0 0 empty empty Trigger_length -2
 -8 0 10 -262144 -1 -1 0 1;
-#X msg 110 332 send \$1 \$2 \$3 \$4;
-#X text 75 44 default speed;
-#X obj 126 83 s8_tempo;
-#X obj 110 133 s8_pitch;
-#X obj 181 134 s8_trigger;
-#X obj 110 367 s8_remote;
-#X obj 206 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 232 62 metro 0;
-#X obj 299 34 hsl 128 15 500 2000 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7300 1;
-#X text 289 58 reverse;
-#X connect 0 0 4 0;
-#X connect 0 0 8 0;
-#X connect 0 0 9 0;
-#X connect 1 0 2 0;
-#X connect 1 0 3 0;
+#X msg 27 373 send \$1 \$2 \$3 \$4;
+#X obj 38 174 s8_pitch;
+#X obj 27 408 s8_remote;
+#X obj 138 76 hsl 128 15 250 2000 0 0 empty empty Tempo -2 -8 0 10
+-262144 -1 -1 1814 1;
+#X obj 15 32 t b b;
+#X obj 25 133 t b b;
+#X obj 137 98 t f f;
+#X obj 123 170 expr 1000 / $f1;
+#X text 99 29 default tempo;
+#X text 222 169 trigger frequency;
+#X connect 0 0 11 0;
+#X connect 1 0 10 0;
 #X connect 2 0 0 0;
-#X connect 3 0 2 1;
-#X connect 3 0 10 0;
+#X connect 3 0 9 0;
 #X connect 4 0 6 0;
 #X connect 5 0 4 3;
-#X connect 6 0 11 0;
-#X connect 8 0 2 1;
-#X connect 8 0 10 1;
-#X connect 9 0 4 1;
-#X connect 10 0 4 2;
-#X connect 12 0 8 1;
-#X connect 13 0 12 0;
-#X connect 14 0 13 1;
+#X connect 6 0 8 0;
+#X connect 7 0 4 1;
+#X connect 9 0 12 0;
+#X connect 10 0 2 0;
+#X connect 10 1 3 0;
+#X connect 11 0 4 0;
+#X connect 11 1 7 0;
+#X connect 12 0 2 1;
+#X connect 12 1 13 0;
+#X connect 13 0 4 2;

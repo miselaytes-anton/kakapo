@@ -1,13 +1,13 @@
 #N canvas 785 274 450 300 10;
-#X obj 275 44 inlet;
+#X obj 104 16 inlet;
 #X obj 27 115 /;
 #X msg 27 76 1000;
 #X obj 214 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 26 38 loadbang;
-#X obj 118 44 inlet;
-#X text 321 45 speed;
-#X text 158 46 default speed;
+#X obj 262 13 inlet;
+#X text 139 16 speed;
+#X text 309 13 default speed;
 #X obj 27 148 outlet;
 #X text 64 77 ms;
 #X connect 0 0 1 1;
