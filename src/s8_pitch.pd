@@ -1,21 +1,21 @@
-#N canvas 524 46 813 538 10;
+#N canvas 629 196 813 538 10;
 #X obj 259 425 outlet;
-#X obj 127 354 hradio 15 0 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+#X obj 127 354 hradio 15 0 1 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 2;
 #X obj 469 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7800 1;
+-1 -1 1270 1;
 #X obj 440 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5964 1;
+-1 -1 4233 1;
 #X obj 410 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7646 1;
+-1 -1 7338 1;
 #X obj 381 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6097 1;
+-1 -1 1976 1;
 #X obj 352 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5877 1;
+-1 -1 9596 1;
 #X obj 322 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9082 1;
+-1 -1 6773 1;
 #X obj 295 138 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9144 1;
+-1 -1 4445 1;
 #X obj 499 276 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 380 277 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -31,7 +31,7 @@
 #X obj 440 276 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 498 138 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6277 1;
+-1 -1 7197 1;
 #X obj 469 276 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 268 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -41,9 +41,9 @@
 #X obj 275 113 s8_random;
 #X obj 291 323 s8_select;
 #X obj 260 377 s8_scales;
-#X obj 51 76 inlet;
-#X obj 48 131 counter 7;
+#X obj 22 83 inlet;
 #X text 62 319 line | major | minor | hungarian;
+#X obj 48 131 pyext s8 counter 7;
 #X connect 1 0 23 0;
 #X connect 2 0 22 7;
 #X connect 3 0 22 6;
@@ -74,5 +74,5 @@
 #X connect 22 7 17 0;
 #X connect 22 8 9 0;
 #X connect 23 0 0 0;
-#X connect 24 0 25 0;
-#X connect 25 0 22 0;
+#X connect 24 0 26 1;
+#X connect 26 0 22 0;
