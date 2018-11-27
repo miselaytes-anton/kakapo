@@ -6,6 +6,11 @@ Bela analog out 1 => MS-20 VCO 1+2 CV IN
 Bela analog out 2 => MS-20 TRIG IN
 ```
 
+## Demo
+
+[![Demo](./demo.png)](https://www.youtube.com/watch?v=HdxeNhHdwMs)
+
+## Patch
 <img width="392" alt="1" src="https://user-images.githubusercontent.com/5480808/34795817-d493d21e-f653-11e7-8396-838fb5caf757.png">
 
 ## Features
@@ -22,10 +27,3 @@ Korg [MS-20 uses](https://en.wikipedia.org/wiki/CV/gate#CV) Hertz per volt (Hz/v
 
 ## Trigger
 Korg [MS-20 uses](https://en.wikipedia.org/wiki/CV/gate#Gate) S-trigger or Negative trigger.
-
-
-## Todo
-- steps pitches randomization
-- trigger duration randomization
-- turn steps on/off
-- extend to 16 steps
